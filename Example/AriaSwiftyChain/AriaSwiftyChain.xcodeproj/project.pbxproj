@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -134,7 +134,6 @@
 				6961030A90ECF555155C572F /* Pods-AriaSwiftyChain-AriaSwiftyChainTests.debug.xcconfig */,
 				7D0CC38D5B0EA23FE0884CAE /* Pods-AriaSwiftyChain-AriaSwiftyChainTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
