@@ -89,6 +89,7 @@
 		026A6553238DA79400D64F26 = {
 			isa = PBXGroup;
 			children = (
+				026A6577238DA7AF00D64F26 /* Classes */,
 				026A655F238DA79400D64F26 /* AriaSwiftyChain */,
 				026A656A238DA79400D64F26 /* AriaSwiftyChainTests */,
 				026A655E238DA79400D64F26 /* Products */,
@@ -109,7 +110,6 @@
 		026A655F238DA79400D64F26 /* AriaSwiftyChain */ = {
 			isa = PBXGroup;
 			children = (
-				026A6577238DA7AF00D64F26 /* Classes */,
 				026A6560238DA79400D64F26 /* AriaSwiftyChain.h */,
 				026A6561238DA79400D64F26 /* Info.plist */,
 			);
