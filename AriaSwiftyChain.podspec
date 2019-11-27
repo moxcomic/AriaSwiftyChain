@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AriaSwiftyChain"
-  s.version          = "0.0.5"
+  s.version          = "0.0.6"
   s.summary          = "一款链式调用框架."
   s.homepage         = "https://github.com/moxcomic/AriaSwiftyChain.git"
   s.license          = { :type => "MIT", :file => "LICENSE" }
@@ -9,5 +9,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "11.0"
   s.swift_version = "5.0"
   s.source_files = "AriaSwiftyChain/Classes/**/*.swift"
-  s.frameworks = "UIKit", "Foundation", "SnapKit", "RxSwift", "NSObject+Rx", "RxDataSources", "RxCocoa"
+  s.frameworks = "UIKit", "Foundation"
+
+  s.dependency "SnapKit"
+  s.dependency "RxSwift"
+  s.dependency "NSObject+Rx"
+  s.dependency "RxDataSources"
+  s.dependency "RxCocoa"
 end
