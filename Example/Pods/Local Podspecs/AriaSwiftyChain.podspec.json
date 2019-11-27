@@ -1,0 +1,24 @@
+{
+  "name": "AriaSwiftyChain",
+  "version": "0.0.2",
+  "summary": "一款链式调用框架.",
+  "homepage": "https://github.com/moxcomic/AriaSwiftyChain.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "moxcomic": "656469762@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/moxcomic/AriaSwiftyChain.git",
+    "tag": "0.0.2"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "AriaSwiftyChain/Classes/**/*.swift",
+  "frameworks": "UIKit",
+  "swift_version": "5.0"
+}
