@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AriaSwiftyChain"
-  s.version          = "0.0.6"
+  s.version          = "0.0.7"
   s.summary          = "一款链式调用框架."
   s.homepage         = "https://github.com/moxcomic/AriaSwiftyChain.git"
   s.license          = { :type => "MIT", :file => "LICENSE" }

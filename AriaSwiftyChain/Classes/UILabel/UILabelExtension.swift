@@ -144,27 +144,4 @@ public extension UILabel {
             return self
         }
     }
-    
-    @discardableResult
-    func addToSuperview(_ superview: UIView) -> UILabel {
-        superview.addSubview(self)
-        return self
-    }
-    
-    @discardableResult
-    @objc
-    func addToSuperview() -> (UIView) -> UILabel {
-        return { (superview) in
-            superview.addSubview(self)
-            return self
-        }
-    }
-    
-    @discardableResult
-    func makeConstraints(_ closure: (_ make: ConstraintMaker) -> ()) -> UILabel {
-        self.snp.makeConstraints { (make) in
-            closure(make)
-        }
-        return self
-    }
 }

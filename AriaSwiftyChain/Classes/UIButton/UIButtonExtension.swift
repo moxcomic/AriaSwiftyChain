@@ -180,44 +180,6 @@ public extension UIButton {
     }
     
     @discardableResult
-    func backgroundColor(_ backgroundColor: UIColor?) -> UIButton {
-        self.backgroundColor = backgroundColor
-        return self
-    }
-    
-    @discardableResult
-    @objc
-    func setBackgroundColor() -> (UIColor?) -> UIButton {
-        return { (backgroundColor) in
-            self.backgroundColor = backgroundColor
-            return self
-        }
-    }
-    
-    @discardableResult
-    func addToSuperview(_ superview: UIView) -> UIButton {
-        superview.addSubview(self)
-        return self
-    }
-    
-    @discardableResult
-    @objc
-    func addToSuperview() -> (UIView) -> UIButton {
-        return { (superview) in
-            superview.addSubview(self)
-            return self
-        }
-    }
-    
-    @discardableResult
-    func makeConstraints(_ closure: (_ make: ConstraintMaker) -> ()) -> UIButton {
-        self.snp.makeConstraints { (make) in
-            closure(make)
-        }
-        return self
-    }
-    
-    @discardableResult
     func tap(_ closure: (() -> ())?) -> UIButton {
         self.rx.tap.bind { closure?() }.disposed(by: rx.disposeBag)
         return self
@@ -228,6 +190,51 @@ public extension UIButton {
     func setTap() -> ((() -> ())?) -> UIButton {
         return { (closure) in
             self.rx.tap.bind { closure?() }.disposed(by: self.rx.disposeBag)
+            return self
+        }
+    }
+    
+    @discardableResult
+    func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> UIButton {
+        self.semanticContentAttribute = semanticContentAttribute
+        return self
+    }
+    
+    @discardableResult
+    @objc
+    func setSemanticContentAttribute() -> (UISemanticContentAttribute) -> UIButton {
+        return { (semanticContentAttribute) in
+            self.semanticContentAttribute = semanticContentAttribute
+            return self
+        }
+    }
+    
+    @discardableResult
+    func font(_ font: UIFont!) -> UIButton {
+        self.titleLabel?.font = font
+        return self
+    }
+    
+    @discardableResult
+    @objc
+    func setFont() -> (UIFont?) -> UIButton {
+        return { (font) in
+            self.titleLabel?.font = font
+            return self
+        }
+    }
+    
+    @discardableResult
+    func borderColor(_ borderColor: UIColor) -> UIButton {
+        self.layer.borderColor = borderColor.cgColor
+        return self
+    }
+    
+    @discardableResult
+    @objc
+    func setBorderColor() -> (UIColor) -> UIButton {
+        return { (borderColor) in
+            self.layer.borderColor = borderColor.cgColor
             return self
         }
     }

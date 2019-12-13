@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		021013CE238E71D90087D2E5 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021013CD238E71D90087D2E5 /* UILabelExtension.swift */; };
 		022DEB1D238EAC4E00E7CCAC /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DEB1C238EAC4E00E7CCAC /* UIAlertControllerExtension.swift */; };
+		023AED0F239FEC2B002BEF95 /* UIImageVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023AED0E239FEC2B002BEF95 /* UIImageVIewExtension.swift */; };
 		026A6567238DA79400D64F26 /* AriaSwiftyChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026A655D238DA79400D64F26 /* AriaSwiftyChain.framework */; };
 		026A656C238DA79400D64F26 /* AriaSwiftyChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A656B238DA79400D64F26 /* AriaSwiftyChainTests.swift */; };
 		026A656E238DA79400D64F26 /* AriaSwiftyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 026A6560238DA79400D64F26 /* AriaSwiftyChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,6 +17,9 @@
 		02C075F1238EAD0700E13FFC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C075F0238EAD0700E13FFC /* UIViewControllerExtension.swift */; };
 		02C31C86238DCC3600B840CB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C31C85238DCC3600B840CB /* UIViewExtension.swift */; };
 		02C31C94238DCF1900B840CB /* SnapKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C31C93238DCF1900B840CB /* SnapKitExtension.swift */; };
+		02CF1CA82395E3A700CC60CE /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CF1CA72395E3A700CC60CE /* UICollectionViewExtension.swift */; };
+		02CF1CE12395EEA100CC60CE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CF1CE02395EEA100CC60CE /* UITableViewExtension.swift */; };
+		0452B7EF029691196750087C /* Pods_AriaSwiftyChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C952F17313847538CA50FD /* Pods_AriaSwiftyChain.framework */; };
 		D9492CE01E132AC48B0F9EBF /* Pods_AriaSwiftyChain_AriaSwiftyChainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D18300CB79AA605381CFE5 /* Pods_AriaSwiftyChain_AriaSwiftyChainTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,7 @@
 /* Begin PBXFileReference section */
 		021013CD238E71D90087D2E5 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		022DEB1C238EAC4E00E7CCAC /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		023AED0E239FEC2B002BEF95 /* UIImageVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageVIewExtension.swift; sourceTree = "<group>"; };
 		026A655D238DA79400D64F26 /* AriaSwiftyChain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AriaSwiftyChain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		026A6560238DA79400D64F26 /* AriaSwiftyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AriaSwiftyChain.h; sourceTree = "<group>"; };
 		026A6561238DA79400D64F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +47,8 @@
 		02C075F0238EAD0700E13FFC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		02C31C85238DCC3600B840CB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		02C31C93238DCF1900B840CB /* SnapKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitExtension.swift; sourceTree = "<group>"; };
+		02CF1CA72395E3A700CC60CE /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		02CF1CE02395EEA100CC60CE /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		22D18300CB79AA605381CFE5 /* Pods_AriaSwiftyChain_AriaSwiftyChainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AriaSwiftyChain_AriaSwiftyChainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCE2CA835CF32E324BA4132 /* Pods-AriaSwiftyChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AriaSwiftyChain.debug.xcconfig"; path = "Target Support Files/Pods-AriaSwiftyChain/Pods-AriaSwiftyChain.debug.xcconfig"; sourceTree = "<group>"; };
 		6961030A90ECF555155C572F /* Pods-AriaSwiftyChain-AriaSwiftyChainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AriaSwiftyChain-AriaSwiftyChainTests.debug.xcconfig"; path = "Target Support Files/Pods-AriaSwiftyChain-AriaSwiftyChainTests/Pods-AriaSwiftyChain-AriaSwiftyChainTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0452B7EF029691196750087C /* Pods_AriaSwiftyChain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +92,14 @@
 				022DEB1C238EAC4E00E7CCAC /* UIAlertControllerExtension.swift */,
 			);
 			path = UIAlertView;
+			sourceTree = "<group>";
+		};
+		023AED0D239FEC1A002BEF95 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				023AED0E239FEC2B002BEF95 /* UIImageVIewExtension.swift */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		026A6553238DA79400D64F26 = {
@@ -128,6 +144,9 @@
 		026A6577238DA7AF00D64F26 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				023AED0D239FEC1A002BEF95 /* UIImageView */,
+				02CF1CDF2395EE8C00CC60CE /* UITableView */,
+				02CF1CA62395E38B00CC60CE /* UICollectionView */,
 				02C075EF238EACF500E13FFC /* UIViewController */,
 				022DEB1B238EAC1500E7CCAC /* UIAlertView */,
 				021013CC238E71C80087D2E5 /* UILabel */,
@@ -168,6 +187,22 @@
 				02C31C93238DCF1900B840CB /* SnapKitExtension.swift */,
 			);
 			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		02CF1CA62395E38B00CC60CE /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				02CF1CA72395E3A700CC60CE /* UICollectionViewExtension.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		02CF1CDF2395EE8C00CC60CE /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				02CF1CE02395EEA100CC60CE /* UITableViewExtension.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 		6E54AC8881FE3C2A99B551CB /* Frameworks */ = {
@@ -369,9 +404,12 @@
 			files = (
 				022DEB1D238EAC4E00E7CCAC /* UIAlertControllerExtension.swift in Sources */,
 				021013CE238E71D90087D2E5 /* UILabelExtension.swift in Sources */,
+				02CF1CA82395E3A700CC60CE /* UICollectionViewExtension.swift in Sources */,
+				02CF1CE12395EEA100CC60CE /* UITableViewExtension.swift in Sources */,
 				02C075F1238EAD0700E13FFC /* UIViewControllerExtension.swift in Sources */,
 				02C31C86238DCC3600B840CB /* UIViewExtension.swift in Sources */,
 				02C31C94238DCF1900B840CB /* SnapKitExtension.swift in Sources */,
+				023AED0F239FEC2B002BEF95 /* UIImageVIewExtension.swift in Sources */,
 				026A657C238DA80200D64F26 /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
