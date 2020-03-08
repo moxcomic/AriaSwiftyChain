@@ -116,4 +116,34 @@ public extension UITableView {
             return self
         }
     }
+    
+    @discardableResult
+    func showsScrollIndicator(_ showsScrollIndicator: Bool = false) -> UITableView {
+        self.showsVerticalScrollIndicator = showsScrollIndicator
+        self.showsHorizontalScrollIndicator = showsScrollIndicator
+        return self
+    }
+    
+    @discardableResult
+    func setShowsScrollIndicator() -> (Bool) -> UITableView {
+        return { (showsScrollIndicator) in
+            self.showsVerticalScrollIndicator = showsScrollIndicator
+            self.showsHorizontalScrollIndicator = showsScrollIndicator
+            return self
+        }
+    }
+    
+    @discardableResult
+    func rowHeight(_ rowHeight: CGFloat) -> UITableView {
+        self.rowHeight = rowHeight
+        return self
+    }
+    
+    @discardableResult
+    func setRowHeight() -> (CGFloat) -> UITableView {
+        return { (rowHeight) in
+            self.rowHeight = rowHeight
+            return self
+        }
+    }
 }
