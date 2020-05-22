@@ -55,14 +55,14 @@ public extension UIImageView {
     }
     
     @discardableResult
-    func image(_ image: UIImage) -> UIImageView {
+    func image(_ image: UIImage?) -> UIImageView {
         self.image = image
         return self
     }
     
     @discardableResult
     @objc
-    func setImage() -> (UIImage) -> UIImageView {
+    func setImage() -> (UIImage?) -> UIImageView {
         return { (image) in
             self.image = image
             return self

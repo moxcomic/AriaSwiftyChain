@@ -68,4 +68,64 @@ public extension UIView {
         self.layer.masksToBounds = true
         return self
     }
+    
+    @discardableResult
+    func cornerRadius(corner: UIRectCorner, radii: CGSize) -> UIView {
+        let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corner, cornerRadii: radii)
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = self.bounds
+        maskLayer.path = maskPath.cgPath
+        self.layer.mask = maskLayer
+        return self
+    }
+    
+    func getSuperViewController() -> UIViewController? {
+        var r: UIResponder = self
+        repeat { r = r.next! } while !(r is UIViewController)
+        guard let vc = r as? UIViewController else { return UIViewController.topViewController() }
+        return vc
+    }
+    
+    @discardableResult
+    func layerBackgroundColor(_ backgroundColor: UIColor) -> UIView {
+        self.layer.backgroundColor = backgroundColor.cgColor
+        return self
+    }
+    
+    @discardableResult
+    func gradient(colors: [UIColor], locations: [NSNumber], startPoint: CGPoint = CGPoint(x: 0, y: 0), endPoint: CGPoint = CGPoint(x: 1, y: 0)) -> UIView {
+        let gradientView = CAGradientLayer()
+        gradientView.frame = bounds
+        gradientView.colors = colors.map { $0.cgColor }
+        gradientView.locations = locations
+        gradientView.startPoint = startPoint
+        gradientView.endPoint = endPoint
+        //layer.insertSublayer(gradientView, at: 0)
+        layer.insertSublayer(gradientView, at: 0)
+        return self
+    }
+    
+    @discardableResult
+    func gradient(colors: [UIColor], locations: [NSNumber], startPoint: CGPoint = CGPoint(x: 0, y: 0), endPoint: CGPoint = CGPoint(x: 1, y: 0), frame: CGRect = .zero) -> UIView {
+        let gradientView = CAGradientLayer()
+        gradientView.frame = frame == .zero ? bounds: frame
+        gradientView.colors = colors.map { $0.cgColor }
+        gradientView.locations = locations
+        gradientView.startPoint = startPoint
+        gradientView.endPoint = endPoint
+        layer.insertSublayer(gradientView, at: 0)
+//        layer.addSublayer(gradientView)
+        return self
+    }
+    
+    @discardableResult
+    func createGradient(colors: [UIColor], locations: [NSNumber], startPoint: CGPoint = CGPoint(x: 0, y: 0), endPoint: CGPoint = CGPoint(x: 1, y: 0), frame: CGRect = .zero) -> CAGradientLayer {
+        let gradientView = CAGradientLayer()
+        gradientView.frame = frame
+        gradientView.colors = colors.map { $0.cgColor }
+        gradientView.locations = locations
+        gradientView.startPoint = startPoint
+        gradientView.endPoint = endPoint
+        return gradientView
+    }
 }
